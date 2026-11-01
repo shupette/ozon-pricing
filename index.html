@@ -3104,8 +3104,8 @@ class GitHubQuoteStore {
   let connecting=null;
   function showConnected(){bar.querySelector('[data-connect]').textContent=saver.connected?'保存权限已连接':'连接保存权限';bar.querySelector('[data-disconnect]').hidden=!saver.connected;}
   async function ensureConnected(){
-    if(saver.connected)return;
     if(connecting)return connecting;
+    if(saver.connected)return;
     connecting=(async()=>{
       let cached='';try{cached=sessionStorage.getItem(sessionKey)||'';}catch{}
       if(cached){try{await saver.connect(cached);showConnected();return;}catch{try{sessionStorage.removeItem(sessionKey);}catch{}}}
@@ -3114,15 +3114,16 @@ class GitHubQuoteStore {
         field.value='';error.textContent='';submit.disabled=false;
         let settled=false;
         function cleanup(){form.removeEventListener('submit',connect);dialog.removeEventListener('close',closed);}
-        function closed(){if(!settled){settled=true;cleanup();reject(new Error('已取消连接，报价尚未保存。'));}}
+        function closed(){if(!settled){settled=true;saver.disconnect();field.value='';cleanup();reject(new Error('已取消连接，报价尚未保存。'));}}
         async function connect(event){
           event.preventDefault();submit.disabled=true;error.textContent='正在核验保存权限…';
           const token=field.value.trim();
           try{
             await saver.connect(token);
+            if(settled){saver.disconnect();return;}
             if(form.elements.remember.checked){try{sessionStorage.setItem(sessionKey,token);}catch{}}
             field.value='';settled=true;cleanup();dialog.close();showConnected();resolve();
-          }catch(e){error.textContent=e.message;submit.disabled=false;}
+          }catch(e){if(!settled){error.textContent=e.message;submit.disabled=false;}}
         }
         form.addEventListener('submit',connect);dialog.addEventListener('close',closed);dialog.showModal();field.focus();
       });
