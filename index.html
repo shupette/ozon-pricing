@@ -2103,6 +2103,12 @@ root.addEventListener(&#x27;change&#x27;,e=&gt;{
  if(e.target.hasAttribute(&#x27;data-category-leaf&#x27;))chooseCategory(e.target.value);
 });
 let feishuPending=null,feishuBusy=false;
+function feishuUUID(){
+  const bytes=crypto.getRandomValues(new Uint8Array(16));
+  bytes[6]=(bytes[6]&amp;15)|64;bytes[8]=(bytes[8]&amp;63)|128;
+  const h=Array.from(bytes,x=&gt;x.toString(16).padStart(2,&#x27;0&#x27;)).join(&#x27;&#x27;);
+  return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(12,16)}-${h.slice(16,20)}-${h.slice(20)}`;
+}
 function feishuKey(){return JSON.stringify({mode,inputs:values,result:current});}
 function beginFeishuSave(){
   if(feishuBusy)return;
@@ -2111,7 +2117,7 @@ function beginFeishuSave(){
   if(!String(values.name||&#x27;&#x27;).trim()){$(&#x27;[data-save-status]&#x27;).textContent=&#x27;请先填写商品名称。&#x27;;return;}
   const key=feishuKey();
   if(feishuPending?.key!==key){
-    feishuPending={key,snapshot:{id:crypto.randomUUID(),saved_at:new Date().toISOString(),mode,inputs:{...values},result:{...current}}};
+    feishuPending={key,snapshot:{id:feishuUUID(),saved_at:new Date().toISOString(),mode,inputs:{...values},result:{...current}}};
   }
   feishuBusy=true;$(&#x27;[data-save]&#x27;).disabled=true;
   $(&#x27;[data-save-status]&#x27;).textContent=&#x27;正在准备保存报价…&#x27;;
