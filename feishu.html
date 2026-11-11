@@ -1905,7 +1905,7 @@ html&gt;body{padding:0}&lt;/style&gt;
           &lt;/div&gt;
           &lt;div class=&quot;oq-current-commission&quot; data-current-commission aria-live=&quot;polite&quot;&gt;选择具体类目后，按售价自动匹配佣金档位。&lt;/div&gt;
           &lt;small class=&quot;oq-muted&quot; data-v3-commission-caption&gt;rFBS参考费率 · OGL适用性待店铺核对&lt;/small&gt;
-          &lt;details class=&quot;oq-commission-source&quot;&gt;&lt;summary class=&quot;cursor-interaction&quot;&gt;佣金来源与适用范围&lt;/summary&gt;&lt;p&gt;&lt;a href=&quot;https://global-help.ozon.com/zh/commissions/ozon-fees/commissions&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Ozon官方类目佣金表 ↗&lt;/a&gt; · 2025-12-01起生效 · 2026-11-11核对。采用 rFBS 列，OGL适用性待店铺核对；此处为参考试算。&lt;/p&gt;&lt;p data-category-source-row&gt;&lt;/p&gt;&lt;/details&gt;
+          &lt;details class=&quot;oq-commission-source&quot;&gt;&lt;summary class=&quot;cursor-interaction&quot;&gt;佣金来源与适用范围&lt;/summary&gt;&lt;p&gt;&lt;a href=&quot;https://global-help.ozon.com/zh/commissions/ozon-fees/commissions&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Ozon官方类目佣金表 ↗&lt;/a&gt; · 2025-12-01起生效 · 2026-11-11核对。参考库采用 rFBS 列，OGL实际佣金在店铺费率设置中核验。&lt;/p&gt;&lt;p data-category-source-row&gt;&lt;/p&gt;&lt;/details&gt;
         &lt;/div&gt;
         &lt;div class=&quot;oq-fields&quot;&gt;
           &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;商品采购价 &lt;em&gt;必填&lt;/em&gt;&lt;/span&gt;&lt;div class=&quot;oq-number&quot;&gt;&lt;span&gt;¥&lt;/span&gt;&lt;input data-key=&quot;purchase&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.1&quot; inputmode=&quot;decimal&quot; required&gt;&lt;/div&gt;&lt;small class=&quot;oq-hint&quot;&gt;1688 / 拼多多单件买入价&lt;/small&gt;&lt;/label&gt;
@@ -1922,19 +1922,19 @@ html&gt;body{padding:0}&lt;/style&gt;
         &lt;div class=&quot;oq-goal&quot; data-target-fields&gt;
           &lt;div class=&quot;oq-section-head&quot;&gt;&lt;h2&gt;希望赚多少&lt;/h2&gt;&lt;/div&gt;
           &lt;div class=&quot;oq-fields&quot;&gt;
-            &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;目标利润率&lt;/span&gt;&lt;div class=&quot;oq-number&quot;&gt;&lt;input data-key=&quot;margin&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;95&quot; step=&quot;1&quot;&gt;&lt;span&gt;%&lt;/span&gt;&lt;/div&gt;&lt;small&gt;预计单件利润 ÷（现金实付＋可用积分补偿）&lt;/small&gt;&lt;/label&gt;
+            &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;目标利润率&lt;/span&gt;&lt;div class=&quot;oq-number&quot;&gt;&lt;input data-key=&quot;margin&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;95&quot; step=&quot;1&quot;&gt;&lt;span&gt;%&lt;/span&gt;&lt;/div&gt;&lt;small&gt;预计单件利润 ÷ 卖家活动后售价&lt;/small&gt;&lt;/label&gt;
             &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;每件至少赚 &lt;span class=&quot;oq-muted&quot;&gt;选填&lt;/span&gt;&lt;/span&gt;&lt;div class=&quot;oq-number&quot;&gt;&lt;span&gt;¥&lt;/span&gt;&lt;input data-key=&quot;minimum&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;1&quot; placeholder=&quot;不限制&quot;&gt;&lt;/div&gt;&lt;small&gt;填了金额时，同时满足两项目标&lt;/small&gt;&lt;/label&gt;
           &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;oq-goal&quot; data-price-fields hidden&gt;
           &lt;div class=&quot;oq-section-head&quot;&gt;&lt;h2&gt;准备卖多少钱&lt;/h2&gt;&lt;/div&gt;
-          &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;卖家活动后售价&lt;/span&gt;&lt;div class=&quot;oq-number&quot;&gt;&lt;span&gt;₽&lt;/span&gt;&lt;input data-key=&quot;manual&quot; type=&quot;number&quot; min=&quot;1&quot; step=&quot;1&quot;&gt;&lt;/div&gt;&lt;small&gt;默认填卖家活动后售价；现金实付口径可在下方切换&lt;/small&gt;&lt;/label&gt;
+          &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;卖家活动后售价&lt;/span&gt;&lt;div class=&quot;oq-number&quot;&gt;&lt;span&gt;₽&lt;/span&gt;&lt;input data-key=&quot;manual&quot; type=&quot;number&quot; min=&quot;1&quot; step=&quot;1&quot;&gt;&lt;/div&gt;&lt;small&gt;你设置的折扣后售价，平台额外积分优惠另算。&lt;/small&gt;&lt;/label&gt;
         &lt;/div&gt;
         &lt;details class=&quot;oq-settings&quot;&gt;&lt;summary class=&quot;cursor-interaction&quot;&gt;经营设置 &lt;span data-settings-summary&gt;&lt;/span&gt;&lt;/summary&gt;&lt;div class=&quot;oq-fields oq-setting-fields&quot; data-settings-fields&gt;&lt;/div&gt;&lt;/details&gt;
-        &lt;style&gt;#ozon-quote-demo .oq-v3-card{padding:20px;border:1px solid var(--oq-line);border-radius:12px;margin-top:18px;background:var(--oq-surface)}#ozon-quote-demo .oq-v3-card details{padding:12px 0;border-top:1px solid var(--oq-line)}#ozon-quote-demo .oq-v3-card summary{cursor:pointer;font-weight:600;line-height:1.6}#ozon-quote-demo .oq-v3-card p,#ozon-quote-demo .oq-v3-card small{font-size:12px;line-height:1.8;display:block;overflow-wrap:anywhere}#ozon-quote-demo .oq-v3-card input,#ozon-quote-demo .oq-v3-card select{width:100%;min-width:0;font:inherit;color:var(--oq-text);background:var(--oq-surface);padding:9px;border:1px solid var(--oq-line);border-radius:6px}#ozon-quote-demo .oq-v3-card button{padding:9px;margin-top:12px;border-radius:6px;cursor:pointer}#ozon-quote-demo [data-v3-status]{color:var(--oq-orange)}#ozon-quote-demo input:disabled{opacity:.55}&lt;/style&gt;&lt;section class=&quot;oq-v3-card&quot; data-v3&gt;
- &lt;h2&gt;报价依据与费用核验&lt;/h2&gt;
+        &lt;style&gt;#ozon-quote-demo .oq-v3-card{padding:20px;border:1px solid var(--oq-line);border-radius:12px;margin-top:18px;background:var(--oq-surface)}#ozon-quote-demo .oq-v3-card details{padding:12px 0;border-top:1px solid var(--oq-line)}#ozon-quote-demo .oq-v3-card summary{cursor:pointer;font-weight:600;line-height:1.6}#ozon-quote-demo .oq-v3-card p,#ozon-quote-demo .oq-v3-card small{font-size:12px;line-height:1.8;display:block;overflow-wrap:anywhere}#ozon-quote-demo .oq-v3-card input,#ozon-quote-demo .oq-v3-card select{width:100%;min-width:0;font:inherit;color:var(--oq-text);background:var(--oq-surface);padding:9px;border:1px solid var(--oq-line);border-radius:6px}#ozon-quote-demo .oq-v3-card button{padding:9px;margin-top:12px;border-radius:6px;cursor:pointer}#ozon-quote-demo [data-v3-status]{color:var(--oq-orange)}#ozon-quote-demo input:disabled{opacity:.55}&lt;/style&gt;&lt;details class=&quot;oq-v3-card&quot; data-v3&gt;&lt;summary&gt;店铺费率设置（保存后复用）&lt;/summary&gt;
+ &lt;p&gt;支付费率可复用；类目佣金按具体类型保存。换类目时载入已保存的依据，确认后采用。&lt;/p&gt;
  &lt;p data-v3-status role=&quot;status&quot;&gt;&lt;/p&gt;
- &lt;details open&gt;&lt;summary&gt;① 店铺佣金与后台类目&lt;/summary&gt;
+ &lt;details&gt;&lt;summary&gt;类目佣金与核验依据&lt;/summary&gt;
  &lt;p&gt;上方类目表用于查参考费率。后台类目、类型和实际计佣分类分别核验；更改类目后佣金不会自动改变。&lt;/p&gt;
  &lt;div class=&quot;oq-fields&quot;&gt;
  &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;佣金口径&lt;/span&gt;&lt;select data-v3-key=&quot;commissionMode&quot;&gt;&lt;option value=&quot;reference&quot;&gt;rFBS参考费率，OGL待确认&lt;/option&gt;&lt;option value=&quot;confirmed&quot;&gt;采用店铺核实的OGL费率&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
@@ -1949,23 +1949,14 @@ html&gt;body{padding:0}&lt;/style&gt;
  &lt;/div&gt;&lt;button type=&quot;button&quot; data-v3-confirm&gt;确认当前类目的佣金依据&lt;/button&gt;
  &lt;small&gt;官方表行号仅用于定位来源，不是后台类目ID。切换参考类目后需要重新确认。&lt;/small&gt;
  &lt;/details&gt;
- &lt;details&gt;&lt;summary&gt;② 卖家售价、积分优惠与补偿&lt;/summary&gt;
- &lt;p&gt;建议售价按卖家活动后售价计算，包含卖家自己的优惠，尚未扣平台积分优惠。佣金、OGL货值以该售价为基数。积分补偿单列计入收入。&lt;/p&gt;
- &lt;div class=&quot;oq-fields&quot;&gt;
- &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;手动试算价格口径&lt;/span&gt;&lt;select data-v3-key=&quot;manualBasis&quot;&gt;&lt;option value=&quot;seller&quot;&gt;卖家活动后售价&lt;/option&gt;&lt;option value=&quot;cash&quot;&gt;买家现金实付（加回平台积分优惠）&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
- &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;本件平台积分优惠 / ₽&lt;/span&gt;&lt;input data-v3-key=&quot;pointDiscount&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot;&gt;&lt;/label&gt;
- &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;预计可使用的积分补偿 / ₽&lt;/span&gt;&lt;input data-v3-key=&quot;pointCompensation&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot;&gt;&lt;/label&gt;
- &lt;/div&gt;&lt;small&gt;积分补偿最多抵扣佣金的规则及可使用余额须按结算期核实；只填预计实际可用金额。未填补偿按0计，避免高估收入。&lt;/small&gt;
- &lt;p data-v3-prices&gt;&lt;/p&gt;
- &lt;/details&gt;
- &lt;details&gt;&lt;summary&gt;③ 取消、退货、转售与销毁&lt;/summary&gt;
+ &lt;details&gt;&lt;summary&gt;售后估算（选填）&lt;/summary&gt;
  &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;售后估算方式&lt;/span&gt;&lt;select data-v3-key=&quot;afterMode&quot;&gt;&lt;option value=&quot;reserve&quot;&gt;沿用经营设置中的售后预留比例&lt;/option&gt;&lt;option value=&quot;scenarios&quot;&gt;按互斥场景加权，替代统一售后预留&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
  &lt;p&gt;各场景概率按全部订单估计，合计小于100%。净回收额＝可回收货值＋实收补偿－该场景已发生的运输、平台、处理及广告等费用；不再扣采购等初始成本与资金成本。可填负数。&lt;/p&gt;
  &lt;div class=&quot;oq-fields&quot; data-v3-scenarios&gt;&lt;/div&gt;
  &lt;small&gt;OGL集运仓取消件由快递员退回卖家仓库的费用已含在OGL运价，不再另加退回运费。WHD净回收需先扣专用佣金、适用税费（现行转售含22%增值税）及处理费。所有已发生费用均计入对应净回收额，避免重复扣除。&lt;/small&gt;
  &lt;p data-v3-risk&gt;&lt;/p&gt;
  &lt;/details&gt;
- &lt;details&gt;&lt;summary&gt;④ 支付费率与已开通服务&lt;/summary&gt;
+ &lt;details&gt;&lt;summary&gt;支付费率与已开通服务&lt;/summary&gt;
  &lt;p&gt;银行费率与提现费率填写在“经营设置”中。默认数值仅为试算假设；填入实际费率并记录依据后再标记已核实。&lt;/p&gt;
  &lt;div class=&quot;oq-fields&quot;&gt;
  &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;银行收单费计费基数&lt;/span&gt;&lt;select data-v3-key=&quot;bankBase&quot;&gt;&lt;option value=&quot;seller&quot;&gt;卖家活动后售价&lt;/option&gt;&lt;option value=&quot;cash&quot;&gt;买家现金实付&lt;/option&gt;&lt;option value=&quot;revenue&quot;&gt;现金＋可用积分补偿&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
@@ -1980,15 +1971,34 @@ html&gt;body{padding:0}&lt;/style&gt;
  &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;其他服务及分摊依据&lt;/span&gt;&lt;input data-v3-key=&quot;extraServiceNote&quot; type=&quot;text&quot;&gt;&lt;/label&gt;
  &lt;/div&gt;&lt;small&gt;评价管理条款自2026-11-10起适用。请按真实开通日期判断所处阶段；退货时该项费用不退，须纳入相应场景净回收额。其他服务费率暂按本件最高售价估算，不同基数的费用请改填单件分摊。&lt;/small&gt;
  &lt;/details&gt;
- &lt;details&gt;&lt;summary&gt;⑤ 订单日期与费率版本&lt;/summary&gt;
+ &lt;details&gt;&lt;summary&gt;订单日期与费率版本&lt;/summary&gt;
  &lt;div class=&quot;oq-fields&quot;&gt;
  &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;订单日期或报价预计下单日&lt;/span&gt;&lt;input data-v3-key=&quot;orderDate&quot; type=&quot;date&quot;&gt;&lt;/label&gt;
  &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;运输组织服务费判定状态&lt;/span&gt;&lt;select data-v3-key=&quot;orderStatus&quot;&gt;&lt;option value=&quot;delivered&quot;&gt;已签收／预计签收（收0.33%）&lt;/option&gt;&lt;option value=&quot;whd&quot;&gt;已通过仓库退回（收0.33%）&lt;/option&gt;&lt;option value=&quot;notDelivered&quot;&gt;尚未实际送达（暂不收0.33%）&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
  &lt;/div&gt;&lt;p&gt;此状态只判定0.33%费用；取消退货的完整损益在售后场景中计算。该项仅适用于2026-09-01及之后创建的订单。&lt;/p&gt;
- &lt;p&gt;模型：2026-11-11 v3 · 普通佣金表：2025-12-01 · OGL运价：2026-08-24 · OGL费用页更新：2026-11-09 · 官方资料核查：2026-11-11。核查日期不等于费率生效日期。&lt;/p&gt;
+ &lt;p&gt;模型：2026-11-11 v3.1 · 普通佣金表：2025-12-01 · OGL运价：2026-08-24 · OGL费用页更新：2026-11-09 · 官方资料核查：2026-11-11。核查日期不等于费率生效日期。&lt;/p&gt;
  &lt;p&gt;&lt;a href=&quot;https://global-help.ozon.com/zh/commissions/ozon-fees/commissions?region=CHN&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;类目佣金&lt;/a&gt; · &lt;a href=&quot;https://global-help.ozon.com/zh/commissions/ozon-fees/ogl-rates?region=CHN&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;OGL费用&lt;/a&gt; · &lt;a href=&quot;https://global-help.ozon.com/zh/commissions/ozon-fees/returns-expenses?region=CHN&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;取消与退货费用&lt;/a&gt; · &lt;a href=&quot;https://global-help.ozon.com/zh/commissions/ozon-fees/commissions-for-other-services?region=CHN&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;附加服务费&lt;/a&gt;&lt;/p&gt;
  &lt;/details&gt;
-&lt;/section&gt;
+&lt;button type=&quot;button&quot; data-shop-save&gt;保存店铺费率设置&lt;/button&gt;&lt;p data-shop-status role=&quot;status&quot;&gt;&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;details class=&quot;oq-v3-card&quot; data-recon&gt;&lt;summary&gt;订单对账（选填）&lt;/summary&gt;
+ &lt;p&gt;成交后再填写。原报价保留不变，对账单独计算实际利润和差额。平台积分补偿只填实际可用于抵扣的金额；实际扣费合计填写抵扣前费用，避免重复计算补偿。&lt;/p&gt;
+ &lt;button type=&quot;button&quot; data-recon-capture&gt;引用当前报价&lt;/button&gt;&lt;p data-recon-reference&gt;尚未引用报价。&lt;/p&gt;
+ &lt;div class=&quot;oq-fields&quot;&gt;
+ &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;订单编号&lt;/span&gt;&lt;input data-recon-key=&quot;orderId&quot; type=&quot;text&quot;&gt;&lt;/label&gt;
+ &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;买家现金实付 / ₽&lt;/span&gt;&lt;input data-recon-key=&quot;cashRub&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot;&gt;&lt;/label&gt;
+ &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;实际可用积分补偿 / ₽&lt;/span&gt;&lt;input data-recon-key=&quot;compensationRub&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot; placeholder=&quot;没有补偿请填0&quot;&gt;&lt;/label&gt;
+ &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;实际结算汇率 / RUB每CNY&lt;/span&gt;&lt;input data-recon-key=&quot;fx&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.0001&quot;&gt;&lt;/label&gt;
+ &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;实际扣费合计 / ¥&lt;/span&gt;&lt;input data-recon-key=&quot;actualFeesCny&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot;&gt;&lt;small&gt;物流、佣金、支付、售后、服务及税费等；不含下方成本、广告和资金成本。填积分抵扣前费用。&lt;/small&gt;&lt;/label&gt;
+ &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;实际采购及国内成本 / ¥&lt;/span&gt;&lt;input data-recon-key=&quot;actualCostCny&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot;&gt;&lt;small&gt;采购、寄广州、处理及其他初始成本合计；引用时带入预算，可按实际修改。&lt;/small&gt;&lt;/label&gt;
+ &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;实际广告支出 / ¥&lt;/span&gt;&lt;input data-recon-key=&quot;actualAdsCny&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot; placeholder=&quot;没有支出请填0&quot;&gt;&lt;/label&gt;
+ &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;实际分摊资金成本 / ¥&lt;/span&gt;&lt;input data-recon-key=&quot;actualFundingCny&quot; type=&quot;number&quot; min=&quot;0&quot; step=&quot;0.01&quot; placeholder=&quot;没有成本请填0&quot;&gt;&lt;/label&gt;
+ &lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;对账说明&lt;/span&gt;&lt;input data-recon-key=&quot;note&quot; type=&quot;text&quot; placeholder=&quot;可记录结算单或差异原因&quot;&gt;&lt;/label&gt;
+ &lt;/div&gt;
+ &lt;p data-recon-validation role=&quot;status&quot;&gt;&lt;/p&gt;&lt;dl class=&quot;oq-shipping-rules&quot; data-recon-result&gt;&lt;/dl&gt;
+ &lt;button type=&quot;button&quot; data-recon-save disabled&gt;保存对账记录&lt;/button&gt;&lt;p data-recon-save-status role=&quot;status&quot;&gt;&lt;/p&gt;
+&lt;/details&gt;
 &lt;p class=&quot;oq-status-line&quot; data-validation role=&quot;alert&quot; hidden&gt;&lt;/p&gt;
       &lt;/section&gt;
       &lt;section class=&quot;oq-result-col&quot; aria-label=&quot;售价与利润结果&quot;&gt;
@@ -2060,7 +2070,7 @@ function categoryPath(c){return [c.top,c.middle,c.leaf].join(&#x27; → &#x27;)+
 function useCategory(v,id){const c=categoryById.get(String(id));v.categoryId=c?.id||&#x27;&#x27;;v.category=v.categoryId;v.categoryName=c?categoryPath(c):&#x27;&#x27;;rateKeys.forEach((k,i)=&gt;v[k]=c?c.rates[i]:&#x27;&#x27;);return c;}
 function searchCategories(query){const q=query.trim().toLocaleLowerCase();if(!q)return [];const words=q.split(/\s+/);return categoryRows.filter(c=&gt;words.every(w=&gt;`${categoryPath(c)} ${c.group} ${c.brand}`.toLocaleLowerCase().includes(w))).sort((a,b)=&gt;(a.leaf.toLocaleLowerCase()===q?-1:0)-(b.leaf.toLocaleLowerCase()===q?-1:0)||a.leaf.localeCompare(b.leaf,&#x27;zh-CN&#x27;));}
 // Financial rules shared by the standalone calculator and Feishu plugin.
-const MODEL_VERSION=&#x27;ozon-pricing-2026-11-11-v3&#x27;;
+const MODEL_VERSION=&#x27;ozon-pricing-2026-11-11-v3.1&#x27;;
 const RATE_VERSIONS={checked:&#x27;2026-11-11&#x27;,commission:&#x27;2025-12-01&#x27;,ogl:&#x27;2026-08-24&#x27;,oglDocumentUpdated:&#x27;2026-11-09&#x27;,organizationEffective:&#x27;2026-09-01&#x27;};
 const V3_DEFAULTS={commissionMode:&#x27;reference&#x27;,actualCategory:&#x27;&#x27;,actualType:&#x27;&#x27;,actualBrand:&#x27;&#x27;,commissionEvidence:&#x27;&#x27;,commissionChecked:&#x27;&#x27;,confirmedCategoryRow:&#x27;&#x27;,actualCommission1:&#x27;&#x27;,actualCommission2:&#x27;&#x27;,actualCommission3:&#x27;&#x27;,manualBasis:&#x27;seller&#x27;,pointDiscount:0,pointCompensation:0,bankBase:&#x27;seller&#x27;,withdrawBase:&#x27;platform&#x27;,feeConfirmed:&#x27;no&#x27;,feeEvidence:&#x27;&#x27;,feeChecked:&#x27;&#x27;,orderDate:&#x27;2026-11-11&#x27;,orderStatus:&#x27;delivered&#x27;,reviewPlan:&#x27;off&#x27;,highestPrice:0,extraServiceRate:0,extraServiceFixed:0,extraServiceNote:&#x27;&#x27;,afterMode:&#x27;reserve&#x27;,cancelProbability:0,cancelRecovery:&#x27;&#x27;,returnProbability:0,returnRecovery:&#x27;&#x27;,whdProbability:0,whdRecovery:&#x27;&#x27;,destroyProbability:0,destroyRecovery:&#x27;&#x27;};
 const nonnegative=x=&gt;x!==&#x27;&#x27;&amp;&amp;x!==null&amp;&amp;Number.isFinite(+x)&amp;&amp;+x&gt;=0;
@@ -2150,28 +2160,59 @@ function solveV3(v,shipping,tariffs,goal=0,minProfit=0){
  return best;
 }
 
+// Daily pricing deliberately ignores order-specific points. Older snapshots retain
+// their original v3 inputs; reconciliation has its own immutable reference.
+function dailyInputs(v){return {...v,manualBasis:&#x27;seller&#x27;,pointDiscount:0,pointCompensation:0};}
+const RECON_DEFAULTS={orderId:&#x27;&#x27;,cashRub:&#x27;&#x27;,compensationRub:&#x27;&#x27;,fx:&#x27;&#x27;,actualFeesCny:&#x27;&#x27;,actualCostCny:&#x27;&#x27;,actualAdsCny:&#x27;&#x27;,actualFundingCny:&#x27;&#x27;,note:&#x27;&#x27;};
+function reconcileOrder(input,reference){
+ if(!reference?.result||!reference?.inputs||!reference?.id||!validDate(reference.capturedAt?.slice(0,10)||&#x27;&#x27;))return {error:&#x27;请先引用一份有效报价，锁定原报价快照。&#x27;};
+ if(!String(input.orderId||&#x27;&#x27;).trim())return {error:&#x27;请填写订单编号。&#x27;};
+ for(const key of [&#x27;cashRub&#x27;,&#x27;compensationRub&#x27;,&#x27;fx&#x27;,&#x27;actualFeesCny&#x27;,&#x27;actualCostCny&#x27;,&#x27;actualAdsCny&#x27;,&#x27;actualFundingCny&#x27;])if(!nonnegative(input[key]))return {error:&#x27;请填全实际收入、汇率和各项费用；没有发生的项目请明确填0。&#x27;};
+ if(+input.fx&lt;=0)return {error:&#x27;实际结算汇率必须大于0。&#x27;};
+ const revenue=(+input.cashRub + +input.compensationRub)/+input.fx;
+ const cost=+input.actualCostCny,profit=revenue-cost-(+input.actualFeesCny)-(+input.actualAdsCny)-(+input.actualFundingCny);
+ if(!Number.isFinite(reference.result.profit))return {error:&#x27;原报价利润无效，请重新引用报价。&#x27;};
+ return {kind:&#x27;reconciliation&#x27;,modelVersion:MODEL_VERSION,orderId:String(input.orderId).trim(),r:+input.cashRub,p:revenue,revenue,cashRub:+input.cashRub,compensationRub:+input.compensationRub,cost,profit,margin:revenue&gt;0?profit/revenue:0,marginAvailable:revenue&gt;0,fees:+input.actualFeesCny,ads:+input.actualAdsCny,funding:+input.actualFundingCny,originalProfit:reference.result.profit,variance:profit-reference.result.profit,referenceId:reference.id};
+}
+const SHOP_COMMON_KEYS=[&#x27;bank&#x27;,&#x27;withdraw&#x27;,&#x27;bankBase&#x27;,&#x27;withdrawBase&#x27;,&#x27;feeConfirmed&#x27;,&#x27;feeEvidence&#x27;,&#x27;feeChecked&#x27;];
+const SHOP_COMMISSION_KEYS=[&#x27;actualCategory&#x27;,&#x27;actualType&#x27;,&#x27;actualBrand&#x27;,&#x27;commissionEvidence&#x27;,&#x27;commissionChecked&#x27;,&#x27;actualCommission1&#x27;,&#x27;actualCommission2&#x27;,&#x27;actualCommission3&#x27;];
+function makeShopProfile(v,previous={}){
+ const error=validateV3(dailyInputs(v));if(error)throw new Error(error);
+ const common=Object.fromEntries(SHOP_COMMON_KEYS.map(k=&gt;[k,v[k]]));
+ const categories={...(previous.categories||{})};
+ if(v.commissionMode===&#x27;confirmed&#x27;)categories[String(v.categoryId)]=Object.fromEntries(SHOP_COMMISSION_KEYS.map(k=&gt;[k,v[k]]));
+ return {common,categories};
+}
+function reuseShopProfile(v,profile,id){
+ const next={...v,...(profile?.common||{})};
+ for(const k of SHOP_COMMISSION_KEYS)next[k]=profile?.categories?.[String(id)]?.[k]??V3_DEFAULTS[k];
+ next.commissionMode=&#x27;reference&#x27;;next.confirmedCategoryRow=&#x27;&#x27;;return next;
+}
+
 const defaults={name:&#x27;示例 · 桌面收纳盒&#x27;,category:&#x27;storage&#x27;,categoryName:&#x27;&#x27;,commission1:12,commission2:14,commission3:18,purchase:6.8,domestic:1.2,handling:1.5,other:.5,weight:320,length:24,width:16,height:10,fx:12,margin:20,minimum:10,manual:600,discount:40,ads:10,returns:3,withdraw:1.2,bank:1.5,days:45,annual:6};
 const settings=[[&#x27;ads&#x27;,&#x27;广告预算&#x27;,&#x27;%&#x27;,&#x27;占卖家活动后售价的比例&#x27;],[&#x27;returns&#x27;,&#x27;售后预留&#x27;,&#x27;%&#x27;,&#x27;退款、丢损等的预估损失&#x27;],[&#x27;withdraw&#x27;,&#x27;提现费率&#x27;,&#x27;%&#x27;,&#x27;示例按平台扣费后余额估算&#x27;],[&#x27;bank&#x27;,&#x27;银行收单费率&#x27;,&#x27;%&#x27;,&#x27;示例值，正式按账单核对&#x27;],[&#x27;days&#x27;,&#x27;预计垫资天数&#x27;,&#x27;天&#x27;,&#x27;采购付款至资金可用的天数&#x27;],[&#x27;annual&#x27;,&#x27;资金年成本率&#x27;,&#x27;%&#x27;,&#x27;用于估算占款成本&#x27;]];
 const $=s=&gt;root.querySelector(s); const $$=s=&gt;Array.from(root.querySelectorAll(s));
 const escaped=s=&gt;String(s).replace(/[&amp;&lt;&gt;&quot;&#x27;]/g,c=&gt;({&#x27;&amp;&#x27;:&#x27;&amp;amp;&#x27;,&#x27;&lt;&#x27;:&#x27;&amp;lt;&#x27;,&#x27;&gt;&#x27;:&#x27;&amp;gt;&#x27;,&#x27;&quot;&#x27;:&#x27;&amp;quot;&#x27;,&quot;&#x27;&quot;:&#x27;&amp;#39;&#x27;}[c]));
 $(&#x27;[data-settings-fields]&#x27;).innerHTML=settings.map(([k,l,u,h])=&gt;`&lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;${l}&lt;/span&gt;&lt;div class=&quot;oq-number&quot;&gt;&lt;input data-key=&quot;${k}&quot; aria-label=&quot;${l}&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;${k===&#x27;days&#x27;?730:99}&quot; step=&quot;${k===&#x27;days&#x27;?1:.1}&quot;&gt;&lt;span&gt;${u}&lt;/span&gt;&lt;/div&gt;&lt;small&gt;${h}&lt;/small&gt;&lt;/label&gt;`).join(&#x27;&#x27;);
 Object.assign(defaults,V3_DEFAULTS);
+let shopProfile={common:{},categories:{}};
+let reconciliation={inputs:{...RECON_DEFAULTS},reference:null};
 let values={...defaults},mode=&#x27;target&#x27;,page=&#x27;calculator&#x27;,saved=[],current=null,baseline=null;
 const money=n=&gt;Number(n).toLocaleString(&#x27;zh-CN&#x27;,{minimumFractionDigits:2,maximumFractionDigits:2});
 const rub=n=&gt;Number(n).toLocaleString(&#x27;zh-CN&#x27;,{maximumFractionDigits:0});
 let pickerTop=&#x27;&#x27;,pickerMiddle=&#x27;&#x27;;
 const savedState=window.openai?.widgetState;
-function applyState(state){const v=state?.privateContent;if(v&amp;&amp;[1,2,3].includes(v.version)){values={...defaults,...v.values};const id=v.version===2?values.categoryId:values.category===&#x27;storage&#x27;?&#x27;17&#x27;:&#x27;&#x27;;useCategory(values,id);mode=[&#x27;target&#x27;,&#x27;price&#x27;].includes(v.mode)?v.mode:&#x27;target&#x27;;saved=Array.isArray(v.saved)?v.saved.slice(-8):[];}else useCategory(values,&#x27;17&#x27;);const c=categoryById.get(values.categoryId);pickerTop=c?.top||&#x27;&#x27;;pickerMiddle=c?.middle||&#x27;&#x27;;}
+function applyState(state){const privateState=state?.privateContent;if(privateState?.shopProfile)shopProfile=privateState.shopProfile;if(privateState?.reconciliation)reconciliation={inputs:{...RECON_DEFAULTS,...privateState.reconciliation.inputs},reference:privateState.reconciliation.reference||null};const v=state?.privateContent;if(v&amp;&amp;[1,2,3,4].includes(v.version)){values={...defaults,...v.values};if(v.version&lt;4&amp;&amp;values.manualBasis===&#x27;cash&#x27;)values.manual=(+values.manual||0)+(+values.pointDiscount||0);values=dailyInputs(values);const id=v.version&gt;=2?values.categoryId:values.category===&#x27;storage&#x27;?&#x27;17&#x27;:&#x27;&#x27;;useCategory(values,id);mode=[&#x27;target&#x27;,&#x27;price&#x27;].includes(v.mode)?v.mode:&#x27;target&#x27;;saved=Array.isArray(v.saved)?v.saved.slice(-8):[];}else useCategory(values,&#x27;17&#x27;);const c=categoryById.get(values.categoryId);pickerTop=c?.top||&#x27;&#x27;;pickerMiddle=c?.middle||&#x27;&#x27;;}
 applyState(savedState);
-function persist(){if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{prototype:&#x27;OGL报价计算器&#x27;,mode,product:values.name,category:values.categoryId,categoryName:values.categoryName,commissionRates:[values.commission1,values.commission2,values.commission3],modelVersion:MODEL_VERSION,rateVersions:RATE_VERSIONS,verification:verification(values),commissionBasis:values.commissionMode===&#x27;confirmed&#x27;?values.commissionEvidence:&#x27;rFBS参考；OGL适用待核对&#x27;,logistics:{weightG:values.weight,dimensionsCm:[values.length,values.width,values.height],volumeWeightG:+(values.length*values.width*values.height/12).toFixed(4),reviewRequired:!!volumeReview().message},fx:values.fx,targetMargin:values.margin,minimumProfit:values.minimum,quotedRub:current?.r??null,profitCny:current?+current.profit.toFixed(2):null,savedQuotes:saved.length},privateContent:{version:3,values,mode,saved}}).catch(()=&gt;{});}
+function persist(){if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{prototype:&#x27;OGL报价计算器&#x27;,mode,product:values.name,category:values.categoryId,categoryName:values.categoryName,commissionRates:[values.commission1,values.commission2,values.commission3],modelVersion:MODEL_VERSION,rateVersions:RATE_VERSIONS,verification:verification(values),commissionBasis:values.commissionMode===&#x27;confirmed&#x27;?values.commissionEvidence:&#x27;rFBS参考；OGL适用待核对&#x27;,logistics:{weightG:values.weight,dimensionsCm:[values.length,values.width,values.height],volumeWeightG:+(values.length*values.width*values.height/12).toFixed(4),reviewRequired:!!volumeReview().message},fx:values.fx,targetMargin:values.margin,minimumProfit:values.minimum,quotedRub:current?.r??null,profitCny:current?+current.profit.toFixed(2):null,savedQuotes:saved.length},privateContent:{version:4,values,mode,saved,shopProfile,reconciliation}}).catch(()=&gt;{});}
 function renderPicker(keepLevel=&#x27;&#x27;){const options=(items,selected,hint)=&gt;`&lt;option value=&quot;&quot;&gt;${hint}&lt;/option&gt;`+items.map(([v,l])=&gt;`&lt;option value=&quot;${escaped(v)}&quot; ${v===selected?&#x27;selected&#x27;:&#x27;&#x27;}&gt;${escaped(l)}&lt;/option&gt;`).join(&#x27;&#x27;);const tops=[...new Set(categoryRows.map(c=&gt;c.top))];if(!keepLevel)$(&#x27;[data-category-top]&#x27;).innerHTML=options(tops.map(t=&gt;[t,t]),pickerTop,&#x27;请选择行业&#x27;);const mids=[...new Set(categoryRows.filter(c=&gt;c.top===pickerTop).map(c=&gt;c.middle))].sort((a,b)=&gt;a.localeCompare(b,&#x27;zh-CN&#x27;));if(keepLevel!==&#x27;middle&#x27;)$(&#x27;[data-category-middle]&#x27;).innerHTML=options(mids.map(t=&gt;[t,t]),pickerMiddle,&#x27;请选择分组&#x27;);$(&#x27;[data-category-middle]&#x27;).disabled=!pickerTop;const leaves=categoryRows.filter(c=&gt;c.top===pickerTop&amp;&amp;c.middle===pickerMiddle).sort((a,b)=&gt;a.leaf.localeCompare(b.leaf,&#x27;zh-CN&#x27;));const labels=leaves.map(c=&gt;c.leaf+(c.brand===&#x27;All&#x27;?&#x27;&#x27;:` · ${c.brand}`));$(&#x27;[data-category-leaf]&#x27;).innerHTML=options(leaves.map((c,i)=&gt;[c.id,labels[i]+(labels.filter(x=&gt;x===labels[i]).length&gt;1?` · ${c.group}（表第${c.id}行）`:&#x27;&#x27;)]),values.categoryId,&#x27;请选择具体类型&#x27;);$(&#x27;[data-category-leaf]&#x27;).disabled=!pickerMiddle;}
 function renderSearch(){const query=$(&#x27;[data-category-search]&#x27;).value;const box=$(&#x27;[data-category-results]&#x27;);box.hidden=!query.trim();if(box.hidden){box.replaceChildren();return;}const found=searchCategories(query);box.innerHTML=`&lt;small&gt;${found.length?`找到 ${found.length} 项${found.length&gt;12?&#x27;，先显示12项；可补充关键词缩小范围&#x27;:&#x27;&#x27;}`:&#x27;没有匹配项，请换个名称，或按下方行业分组选择。&#x27;}&lt;/small&gt;`+found.slice(0,12).map(c=&gt;`&lt;button type=&quot;button&quot; class=&quot;oq-search-result cursor-interaction&quot; data-category-pick=&quot;${c.id}&quot;&gt;&lt;strong&gt;${escaped(c.leaf)}${c.brand===&#x27;All&#x27;?&#x27;&#x27;:` · ${escaped(c.brand)}`}&lt;/strong&gt;&lt;small&gt;${escaped(categoryPath(c))} · ${c.rates.join(&#x27;% / &#x27;)}% · 表第${c.id}行&lt;/small&gt;&lt;/button&gt;`).join(&#x27;&#x27;);}
-function chooseCategory(id){const c=useCategory(values,id);pickerTop=c?.top||pickerTop;pickerMiddle=c?.middle||pickerMiddle;$(&#x27;[data-category-search]&#x27;).value=&#x27;&#x27;;renderSearch();renderPicker();$(&#x27;[data-category-picker]&#x27;).open=!c;baseline=null;render();persist();}
+function chooseCategory(id){const c=useCategory(values,id);applyShopCategory(values,id);pickerTop=c?.top||pickerTop;pickerMiddle=c?.middle||pickerMiddle;$(&#x27;[data-category-search]&#x27;).value=&#x27;&#x27;;renderSearch();renderPicker();$(&#x27;[data-category-picker]&#x27;).open=!c;baseline=null;render();persist();}
 function renderCategory(){const c=categoryById.get(values.categoryId);$(&#x27;[data-category-title]&#x27;).textContent=c?c.leaf+(c.brand===&#x27;All&#x27;?&#x27;&#x27;:` · ${c.brand}`):&#x27;请选择具体商品类目&#x27;;$(&#x27;[data-category-path]&#x27;).textContent=c?categoryPath(c):&#x27;尚未选择：可搜索“宠物碗”，或按行业 → 分组 → 具体类型选择。&#x27;;$(&#x27;[data-category-source-row]&#x27;).textContent=c?`官方 Full ChinaHK 工作表第${c.id}行 · 佣金分类：${c.group} · ${c.brand===&#x27;All&#x27;?&#x27;通用品牌列；特殊品牌请选择对应品牌项目&#x27;:&#x27;品牌：&#x27;+c.brand}`:&#x27;含官方10,795条明细；展示时合并重复项目，保留品牌差异。&#x27;;rateKeys.forEach((k,i)=&gt;$(`[data-rate=&quot;${i}&quot;]`).textContent=c?values[k]+&#x27;%&#x27;:&#x27;—&#x27;);if(!c)$(&#x27;[data-category-picker]&#x27;).open=true;}
 function sync(){syncV3();for(const el of $$(&#x27;[data-key]&#x27;))el.value=values[el.dataset.key]??&#x27;&#x27;;renderPicker();renderCategory();render();}
-function getInvalid(){const v3Error=validateV3(values);if(v3Error)return v3Error;const packaging=packageCheck();if(packaging.message)return packaging.message;const review=volumeReview();if(review.message)return review.message;if(!categoryById.has(values.categoryId))return &#x27;请选择具体商品类目，系统会自动匹配官方佣金，无需手填。&#x27;;const required=[&#x27;purchase&#x27;,&#x27;domestic&#x27;,&#x27;weight&#x27;,&#x27;length&#x27;,&#x27;width&#x27;,&#x27;height&#x27;,&#x27;fx&#x27;];if(required.some(k=&gt;values[k]===&#x27;&#x27;||!Number.isFinite(Number(values[k]))))return &#x27;请填写采购价、寄广州费用、重量、尺寸和汇率。&#x27;;if(Number(values.fx)&lt;=0)return &#x27;汇率需大于0，例如12表示1元人民币兑换12卢布。&#x27;;if([&#x27;purchase&#x27;,&#x27;domestic&#x27;,&#x27;handling&#x27;,&#x27;other&#x27;,&#x27;minimum&#x27;,&#x27;margin&#x27;,...settings.map(x=&gt;x[0])].some(k=&gt;Number(values[k])&lt;0))return &#x27;费用、利润目标和经营比例不能为负数。&#x27;;if([&#x27;weight&#x27;,&#x27;length&#x27;,&#x27;width&#x27;,&#x27;height&#x27;].some(k=&gt;Number(values[k])&lt;=0))return &#x27;包装重量和长宽高需大于0。&#x27;;if(values.margin&gt;=100||[&#x27;ads&#x27;,&#x27;returns&#x27;,&#x27;withdraw&#x27;,&#x27;bank&#x27;,&#x27;annual&#x27;].some(k=&gt;Number(values[k])&gt;=100))return &#x27;请填写小于100%的比例。&#x27;;if(values.discount&lt;0||values.discount&gt;=100)return &#x27;优惠比例需在0%至不足100%之间。&#x27;;if(mode===&#x27;price&#x27;&amp;&amp;(!Number.isFinite(Number(values.manual))||values.manual===&#x27;&#x27;||Number(values.manual)&lt;=0))return &#x27;请填写大于0的卢布买家支付价。&#x27;;return &#x27;&#x27;;}
+function getInvalid(){const v3Error=validateV3(dailyInputs(values));if(v3Error)return v3Error;const packaging=packageCheck();if(packaging.message)return packaging.message;const review=volumeReview();if(review.message)return review.message;if(!categoryById.has(values.categoryId))return &#x27;请选择具体商品类目，系统会自动匹配官方佣金，无需手填。&#x27;;const required=[&#x27;purchase&#x27;,&#x27;domestic&#x27;,&#x27;weight&#x27;,&#x27;length&#x27;,&#x27;width&#x27;,&#x27;height&#x27;,&#x27;fx&#x27;];if(required.some(k=&gt;values[k]===&#x27;&#x27;||!Number.isFinite(Number(values[k]))))return &#x27;请填写采购价、寄广州费用、重量、尺寸和汇率。&#x27;;if(Number(values.fx)&lt;=0)return &#x27;汇率需大于0，例如12表示1元人民币兑换12卢布。&#x27;;if([&#x27;purchase&#x27;,&#x27;domestic&#x27;,&#x27;handling&#x27;,&#x27;other&#x27;,&#x27;minimum&#x27;,&#x27;margin&#x27;,...settings.map(x=&gt;x[0])].some(k=&gt;Number(values[k])&lt;0))return &#x27;费用、利润目标和经营比例不能为负数。&#x27;;if([&#x27;weight&#x27;,&#x27;length&#x27;,&#x27;width&#x27;,&#x27;height&#x27;].some(k=&gt;Number(values[k])&lt;=0))return &#x27;包装重量和长宽高需大于0。&#x27;;if(values.margin&gt;=100||[&#x27;ads&#x27;,&#x27;returns&#x27;,&#x27;withdraw&#x27;,&#x27;bank&#x27;,&#x27;annual&#x27;].some(k=&gt;Number(values[k])&gt;=100))return &#x27;请填写小于100%的比例。&#x27;;if(values.discount&lt;0||values.discount&gt;=100)return &#x27;优惠比例需在0%至不足100%之间。&#x27;;if(mode===&#x27;price&#x27;&amp;&amp;(!Number.isFinite(Number(values.manual))||values.manual===&#x27;&#x27;||Number(values.manual)&lt;=0))return &#x27;请填写大于0的卢布买家支付价。&#x27;;return &#x27;&#x27;;}
 const officialShipping=[{&quot;group&quot;:&quot;超级轻小件&quot;,&quot;code&quot;:&quot;Extra Small&quot;,&quot;fixed&quot;:2.9,&quot;per&quot;:0.0247,&quot;min&quot;:1,&quot;max&quot;:500,&quot;priceMin&quot;:0.01,&quot;priceMax&quot;:135,&quot;volume&quot;:false,&quot;lengthMax&quot;:200,&quot;value&quot;:&quot;¥0.01-135&quot;,&quot;sourceRow&quot;:5,&quot;selfDropRow&quot;:11},{&quot;group&quot;:&quot;经济件&quot;,&quot;code&quot;:&quot;Budget&quot;,&quot;fixed&quot;:22.25,&quot;per&quot;:0.0164,&quot;min&quot;:501,&quot;max&quot;:35000,&quot;priceMin&quot;:0.01,&quot;priceMax&quot;:135,&quot;volume&quot;:false,&quot;lengthMax&quot;:200,&quot;value&quot;:&quot;¥0.01-135&quot;,&quot;sourceRow&quot;:6,&quot;selfDropRow&quot;:12},{&quot;group&quot;:&quot;小件&quot;,&quot;code&quot;:&quot;Small&quot;,&quot;fixed&quot;:15.48,&quot;per&quot;:0.0242,&quot;min&quot;:1,&quot;max&quot;:2000,&quot;priceMin&quot;:135.01,&quot;priceMax&quot;:635,&quot;volume&quot;:false,&quot;lengthMax&quot;:200,&quot;value&quot;:&quot;¥135.01-635&quot;,&quot;sourceRow&quot;:7,&quot;selfDropRow&quot;:13},{&quot;group&quot;:&quot;大件&quot;,&quot;code&quot;:&quot;Big&quot;,&quot;fixed&quot;:34.82,&quot;per&quot;:0.0164,&quot;min&quot;:2001,&quot;max&quot;:35000,&quot;priceMin&quot;:135.01,&quot;priceMax&quot;:635,&quot;volume&quot;:true,&quot;lengthMax&quot;:200,&quot;value&quot;:&quot;¥135.01-635&quot;,&quot;sourceRow&quot;:8,&quot;selfDropRow&quot;:14},{&quot;group&quot;:&quot;高货值小件&quot;,&quot;code&quot;:&quot;Premium Small&quot;,&quot;fixed&quot;:21.28,&quot;per&quot;:0.0242,&quot;min&quot;:1,&quot;max&quot;:5000,&quot;priceMin&quot;:635.01,&quot;priceMax&quot;:22525,&quot;volume&quot;:false,&quot;lengthMax&quot;:200,&quot;value&quot;:&quot;¥635.01-22525&quot;,&quot;sourceRow&quot;:9,&quot;selfDropRow&quot;:15},{&quot;group&quot;:&quot;高货值大件&quot;,&quot;code&quot;:&quot;Premium Big&quot;,&quot;fixed&quot;:59.97,&quot;per&quot;:0.0222,&quot;min&quot;:5001,&quot;max&quot;:35000,&quot;priceMin&quot;:635.01,&quot;priceMax&quot;:22525,&quot;volume&quot;:true,&quot;lengthMax&quot;:200,&quot;value&quot;:&quot;¥635.01-22525&quot;,&quot;sourceRow&quot;:10,&quot;selfDropRow&quot;:16}];
-function calculate(r,v=values){if(packageCheck(v).message||volumeReview(v).message)return null;return calculateV3(r,v,matchShipping);}
+function calculate(r,v=values){if(packageCheck(v).message||volumeReview(v).message)return null;return calculateV3(r,dailyInputs(v),matchShipping);}
 function matchShipping(p,v=values){if(packageCheck(v).message||!Number.isFinite(p))return null;const weight=+v.weight;const tariff=officialShipping.find(t=&gt;(t.priceMin===.01?p&gt;=.01-1e-9:p&gt;Number((t.priceMin-.01).toFixed(2))+1e-9)&amp;&amp;p&lt;=t.priceMax+1e-9&amp;&amp;weight&gt;=t.min&amp;&amp;weight&lt;=t.max);if(!tariff)return null;const volume=+v.length*+v.width*+v.height/12;return{tariff,charge:tariff.volume?Math.max(weight,volume):weight,volume};}
 function volumeReview(v=values){if(packageCheck(v).message)return{code:&#x27;&#x27;,fields:[],message:&#x27;&#x27;};const volume=+v.length*+v.width*+v.height/12;if(volume&lt;=35000+1e-9)return{code:&#x27;&#x27;,fields:[],message:&#x27;&#x27;};const number=Number(volume.toFixed(4)).toLocaleString(&#x27;zh-CN&#x27;,{maximumFractionDigits:4});return{code:&#x27;volume-review&#x27;,fields:[],message:`承运条件待核实：本件体积重为 ${number} 克（${Number((volume/1000).toFixed(4))}公斤）。超出本模型已验证范围，已暂停自动报价。请核对厘米/毫米，或向OGL确认收件条件。35公斤是模型核验边界，不表示官方对全部档位设有统一体积重上限。`};}
 function packageCheck(v=values){
@@ -2186,7 +2227,7 @@ function packageCheck(v=values){
  return {code:&#x27;&#x27;,fields:[],message:&#x27;&#x27;};
 }
 function convertMm(v=values){if(packageCheck(v).code!==&#x27;dimension&#x27;&amp;&amp;!volumeReview(v).message)return null;const converted=Object.fromEntries([&#x27;length&#x27;,&#x27;width&#x27;,&#x27;height&#x27;].map(k=&gt;[k,Number((+v[k]/10).toFixed(6))]));return Math.max(...Object.values(converted))&lt;=200?converted:null;}
-function solve(goal,minProfit=0){if(packageCheck(values).message||volumeReview(values).message)return null;return solveV3(values,matchShipping,officialShipping,goal,minProfit);}
+function solve(goal,minProfit=0){if(packageCheck(values).message||volumeReview(values).message)return null;return solveV3(dailyInputs(values),matchShipping,officialShipping,goal,minProfit);}
 function band(m){return m&lt;0?&#x27;loss&#x27;:m&lt;.1?&#x27;low&#x27;:m&lt;.2?&#x27;mid&#x27;:m&lt;.3?&#x27;good&#x27;:&#x27;high&#x27;;}
 const shippingRows=Object.fromEntries(officialShipping.map(t=&gt;[t.group,{...t,next:t.code===&#x27;Extra Small&#x27;?&#x27;Budget&#x27;:t.code===&#x27;Small&#x27;?&#x27;Big&#x27;:t.code===&#x27;Premium Small&#x27;?&#x27;Premium Big&#x27;:null}]));
 const grams=n=&gt;Number(n).toLocaleString(&#x27;zh-CN&#x27;,{maximumFractionDigits:4});
@@ -2207,7 +2248,7 @@ function renderShipping(c){
  $(&#x27;[data-shipping-value]&#x27;).textContent=`¥${money(c.p)}（本次买家支付价折算）`;
  $(&#x27;[data-shipping-change]&#x27;).hidden=!s.change;
 }
-function renderSaved(){ $(&#x27;[data-count]&#x27;).textContent=saved.length;$(&#x27;[data-saved-list]&#x27;).innerHTML=saved.length?saved.slice().reverse().map(q=&gt;`&lt;div class=&quot;oq-saved-item&quot;&gt;&lt;div&gt;&lt;strong&gt;${escaped(q.name)}&lt;/strong&gt;&lt;small&gt;${escaped(q.time)} · 汇率 ${q.fx} · 成本 ¥${money(q.cost)}&lt;/small&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;₽ ${rub(q.r)}&lt;/strong&gt;&lt;small&gt;利润 ¥${money(q.profit)} · ${(q.margin*100).toFixed(2)}% · ${q.origin===&#x27;feishu&#x27;?&#x27;已保存飞书&#x27;:&#x27;旧演示记录，未同步&#x27;}&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;`).join(&#x27;&#x27;):&#x27;&lt;p class=&quot;oq-empty&quot;&gt;还没有保存记录。保存成功后，这里显示最近8条；完整记录在飞书。&lt;/p&gt;&#x27;;}
+function renderSaved(){ $(&#x27;[data-count]&#x27;).textContent=saved.length;$(&#x27;[data-saved-list]&#x27;).innerHTML=saved.length?saved.slice().reverse().map(q=&gt;`&lt;div class=&quot;oq-saved-item&quot;&gt;&lt;div&gt;&lt;strong&gt;${escaped(q.name)}&lt;/strong&gt;&lt;small&gt;${escaped(q.time)} · ${q.kind===&#x27;reconciliation&#x27;?&#x27;订单对账&#x27;:&#x27;日常报价&#x27;} · 汇率 ${q.fx} · 成本 ¥${money(q.cost)}&lt;/small&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;₽ ${rub(q.r)}&lt;/strong&gt;&lt;small&gt;利润 ¥${money(q.profit)} · ${(q.margin*100).toFixed(2)}% · ${q.origin===&#x27;feishu&#x27;?&#x27;已保存飞书&#x27;:&#x27;旧演示记录，未同步&#x27;}&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;`).join(&#x27;&#x27;):&#x27;&lt;p class=&quot;oq-empty&quot;&gt;还没有保存记录。保存成功后，这里显示最近8条；完整记录在飞书。&lt;/p&gt;&#x27;;}
 function render(){
   renderCategory();
   const packageProblem=renderPackage();renderTariffAudit();
@@ -2219,7 +2260,7 @@ function render(){
   $(&#x27;[data-settings-summary]&#x27;).textContent=`广告 ${values.ads||0}% · 售后 ${values.returns||0}%`;
   $(&#x27;[data-discount-note]&#x27;).textContent=`优惠${values.discount||0}%，买家付原价的${100-(+values.discount||0)}%`;
   $(&#x27;[data-rate-caption]&#x27;).textContent=`本次采用汇率 ${values.fx||&#x27;—&#x27;} RUB / CNY`;
-  const invalid=getInvalid();current=invalid?null:mode===&#x27;target&#x27;?solve(values.margin/100,+values.minimum||0):calculate(Math.ceil(+values.manual+(values.manualBasis===&#x27;cash&#x27;?+values.pointDiscount:0)));
+  const invalid=getInvalid();current=invalid?null:mode===&#x27;target&#x27;?solve(values.margin/100,+values.minimum||0):calculate(Math.ceil(+values.manual));
   const error=invalid||(!current?&#x27;当前条件下没有可行报价，请检查成本、利润目标和物流范围。&#x27;:&#x27;&#x27;);
   $(&#x27;[data-validation]&#x27;).textContent=error;$(&#x27;[data-validation]&#x27;).hidden=!error||error===packageProblem.message;$(&#x27;[data-save]&#x27;).disabled=!current;
   const c=current,be=!invalid?solve(0):null;
@@ -2240,10 +2281,11 @@ function render(){
 }
 const v3Fields=[&#x27;cancel&#x27;,&#x27;return&#x27;,&#x27;whd&#x27;,&#x27;destroy&#x27;];
 $(&#x27;[data-v3-scenarios]&#x27;).innerHTML=v3Fields.map((k,i)=&gt;`&lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;${[&#x27;集运仓取消退回&#x27;,&#x27;俄罗斯端拒收或退货&#x27;,&#x27;WHD转售&#x27;,&#x27;销毁&#x27;][i]}概率 / %&lt;/span&gt;&lt;input data-v3-key=&quot;${k}Probability&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;99.99&quot; step=&quot;0.1&quot;&gt;&lt;/label&gt;&lt;label class=&quot;oq-field&quot;&gt;&lt;span&gt;该场景每件净回收额 / ¥&lt;/span&gt;&lt;input data-v3-key=&quot;${k}Recovery&quot; type=&quot;number&quot; step=&quot;0.01&quot; placeholder=&quot;启用时必填，可为负数&quot;&gt;&lt;/label&gt;`).join(&#x27;&#x27;);
-function syncV3(){for(const el of $$(&#x27;[data-v3-key]&#x27;))el.value=values[el.dataset.v3Key]??&#x27;&#x27;;}
+function syncV3(){syncReconciliation();for(const el of $$(&#x27;[data-v3-key]&#x27;))el.value=values[el.dataset.v3Key]??&#x27;&#x27;;}
 function renderV3(c){
+ renderReconciliation();
+ for(const key of [&#x27;ads&#x27;,&#x27;returns&#x27;]){const hint=$(`[data-key=&quot;${key}&quot;]`).closest(&#x27;label&#x27;).querySelector(&#x27;small&#x27;);if(hint)hint.textContent=key===&#x27;ads&#x27;?&#x27;占卖家活动后售价的比例&#x27;:&#x27;按卖家售价预留；场景模式不叠加&#x27;;}
  const verify=verification(values);$(&#x27;[data-v3-status]&#x27;).textContent=verify.status+(verify.missing.length?&#x27;：&#x27;+verify.missing.join(&#x27;；&#x27;):&#x27;；利润仍为预算估计&#x27;);
- $(&#x27;[data-v3-prices]&#x27;).textContent=c?`卖家活动后售价 ₽${money(c.r)}；买家现金实付 ₽${money(c.cashRub)}；预计可用积分补偿 ₽${money(c.compensationRub)}；合计收入 ¥${money(c.revenue)}。`:&#x27;补全价格后显示现金实付及积分补偿。&#x27;;
  $(&#x27;[data-v3-risk]&#x27;).textContent=c?(values.afterMode===&#x27;scenarios&#x27;?`成功签收场景利润 ¥${money(c.beforeRisk)}；加权预计单件利润 ¥${money(c.profit)}。未叠加统一售后预留。`:`本次沿用 ${values.returns||0}% 售后预留。`):&#x27;&#x27;;
  const feeKeys=[&#x27;bank&#x27;,&#x27;withdraw&#x27;];for(const key of feeKeys){const el=$(`[data-key=&quot;${key}&quot;]`);if(el)el.min=&#x27;0&#x27;;}
  $(&#x27;[data-key=&quot;returns&quot;]&#x27;).disabled=values.afterMode===&#x27;scenarios&#x27;;
@@ -2252,12 +2294,12 @@ function renderV3(c){
  $(&#x27;[data-current-commission]&#x27;).textContent=c?`${values.commissionMode===&#x27;confirmed&#x27;?&#x27;店铺已核实&#x27;:&#x27;rFBS参考&#x27;} ${Number((c.rate*100).toFixed(4))}% · 佣金 ¥${money(c.commission)}`:&#x27;选择类目并补全费用依据后显示佣金。&#x27;;
  const caption=$(&#x27;[data-v3-commission-caption]&#x27;);if(caption)caption.textContent=values.commissionMode===&#x27;confirmed&#x27;?&#x27;采用店铺核实的OGL佣金；更改类目后请重新核验&#x27;:&#x27;rFBS参考费率 · OGL适用性待店铺核对&#x27;;
  const ratesForDisplay=rates(values);rateKeys.forEach((key,i)=&gt;{$(`[data-rate=&quot;${i}&quot;]`).textContent=Number.isFinite(ratesForDisplay[i])?(ratesForDisplay[i]*100).toFixed(2)+&#x27;%&#x27;:&#x27;—&#x27;;});
- const rows=c?[[&#x27;卖家活动后售价折算（计佣基数）&#x27;,c.p],[&#x27;买家现金＋预计可用积分补偿&#x27;,c.revenue],[&#x27;采购＋国内运费＋广州处理＋其他&#x27;,c.cost],[&#x27;OGL国际运输&#x27;,c.logistics],[`销售佣金（${(c.rate*100).toFixed(2)}%）`,c.commission],[&#x27;OGL电子服务费（2%，15–200₽）&#x27;,c.electronic],[&#x27;运输组织服务费（按日期及状态判定）&#x27;,c.organization],[&#x27;银行收单费（按所选基数）&#x27;,c.bank],[&#x27;提现费（按所选基数）&#x27;,c.withdraw],[&#x27;评价管理订阅&#x27;,c.reviewFee],[&#x27;其他已开通服务&#x27;,c.extraServices],[&#x27;广告预算&#x27;,c.ads],[values.afterMode===&#x27;scenarios&#x27;?&#x27;售后场景对利润的加权调整&#x27;:&#x27;售后预留&#x27;,c.after],[&#x27;垫资资金成本&#x27;,c.funding],[&#x27;预计单件利润&#x27;,c.profit]]:[];
+ const rows=c?[[&#x27;卖家活动后售价折算（计佣基数）&#x27;,c.p],[&#x27;按卖家售价估算收入&#x27;,c.revenue],[&#x27;采购＋国内运费＋广州处理＋其他&#x27;,c.cost],[&#x27;OGL国际运输&#x27;,c.logistics],[`销售佣金（${(c.rate*100).toFixed(2)}%）`,c.commission],[&#x27;OGL电子服务费（2%，15–200₽）&#x27;,c.electronic],[&#x27;运输组织服务费（按日期及状态判定）&#x27;,c.organization],[&#x27;银行收单费（按所选基数）&#x27;,c.bank],[&#x27;提现费（按所选基数）&#x27;,c.withdraw],[&#x27;评价管理订阅&#x27;,c.reviewFee],[&#x27;其他已开通服务&#x27;,c.extraServices],[&#x27;广告预算&#x27;,c.ads],[values.afterMode===&#x27;scenarios&#x27;?&#x27;售后场景对利润的加权调整&#x27;:&#x27;售后预留&#x27;,c.after],[&#x27;垫资资金成本&#x27;,c.funding],[&#x27;预计单件利润&#x27;,c.profit]]:[];
  $(&#x27;[data-breakdown]&#x27;).innerHTML=rows.map(([label,amount])=&gt;`&lt;dt&gt;${label}&lt;/dt&gt;&lt;dd&gt;¥ ${money(amount)}&lt;/dd&gt;`).join(&#x27;&#x27;);
  $(&#x27;[data-result-label]&#x27;).textContent=mode===&#x27;target&#x27;?&#x27;建议卖家活动后售价&#x27;:&#x27;本次卖家活动后售价&#x27;;
- if(c)$(&#x27;[data-result-cny]&#x27;).textContent=`收入 ¥${money(c.revenue)} · 买家现金 ₽${money(c.cashRub)} · ${verify.status}`;
+ if(c)$(&#x27;[data-result-cny]&#x27;).textContent=`约合 ¥${money(c.p)} · 日常定价口径`;
  $(&#x27;[data-settings-summary]&#x27;).textContent=`广告 ${values.ads||0}% · ${values.afterMode===&#x27;scenarios&#x27;?&#x27;场景售后&#x27;:&#x27;售后 &#x27;+(values.returns||0)+&#x27;%&#x27;}`;
- $(&#x27;[data-key=&quot;manual&quot;]&#x27;).closest(&#x27;label&#x27;).querySelector(&#x27;span&#x27;).textContent=values.manualBasis===&#x27;cash&#x27;?&#x27;买家现金实付价&#x27;:&#x27;卖家活动后售价&#x27;;
+ $(&#x27;[data-key=&quot;manual&quot;]&#x27;).closest(&#x27;label&#x27;).querySelector(&#x27;span&#x27;).textContent=&#x27;卖家活动后售价&#x27;;
 }
 root.addEventListener(&#x27;input&#x27;,e=&gt;{
  if([&#x27;bank&#x27;,&#x27;withdraw&#x27;].includes(e.target.dataset.key)){values.feeConfirmed=&#x27;no&#x27;;syncV3();render();persist();return;}
@@ -2268,47 +2310,69 @@ root.addEventListener(&#x27;input&#x27;,e=&gt;{
  render();persist();
 });
 let feishuPending=null,feishuBusy=false;
-function feishuUUID(){
-  const bytes=crypto.getRandomValues(new Uint8Array(16));
-  bytes[6]=(bytes[6]&amp;15)|64;bytes[8]=(bytes[8]&amp;63)|128;
-  const h=Array.from(bytes,x=&gt;x.toString(16).padStart(2,&#x27;0&#x27;)).join(&#x27;&#x27;);
-  return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(12,16)}-${h.slice(16,20)}-${h.slice(20)}`;
+function feishuUUID(){return newRecordId();}
+function feishuKey(kind=&#x27;daily&#x27;){return kind===&#x27;reconciliation&#x27;?JSON.stringify(reconciliation):JSON.stringify({mode,inputs:dailyInputs(values),result:current});}
+function saveStatus(kind){return $(kind===&#x27;reconciliation&#x27;?&#x27;[data-recon-save-status]&#x27;:&#x27;[data-save-status]&#x27;);}
+function submitFeishuSnapshot(kind,makeSnapshot){
+ if(feishuBusy)return;
+ const key=feishuKey(kind);
+ try{if(feishuPending?.key!==key||feishuPending?.kind!==kind)feishuPending={kind,key,snapshot:makeSnapshot()};}catch(error){saveStatus(kind).textContent=error.message;return;}
+ feishuBusy=true;$(&#x27;[data-save]&#x27;).disabled=true;$(&#x27;[data-recon-save]&#x27;).disabled=true;
+ saveStatus(kind).textContent=&#x27;正在准备保存…&#x27;;
+ parent.postMessage({type:&#x27;ozon-save-quote&#x27;,requestId:feishuPending.snapshot.id,snapshot:feishuPending.snapshot},&#x27;*&#x27;);
 }
-function feishuKey(){return JSON.stringify({mode,inputs:values,result:current});}
 function beginFeishuSave(){
-  if(feishuBusy)return;
-  const invalid=getInvalid();
-  if(invalid||!current){$(&#x27;[data-save-status]&#x27;).textContent=invalid||&#x27;请先完成有效报价。&#x27;;return;}
-  if(!String(values.name||&#x27;&#x27;).trim()){$(&#x27;[data-save-status]&#x27;).textContent=&#x27;请先填写商品名称。&#x27;;return;}
-  const key=feishuKey();
-  if(feishuPending?.key!==key){
-    feishuPending={key,snapshot:{id:feishuUUID(),saved_at:new Date().toISOString(),mode,inputs:{...values},result:{...current}}};
-  }
-  feishuBusy=true;$(&#x27;[data-save]&#x27;).disabled=true;
-  $(&#x27;[data-save-status]&#x27;).textContent=&#x27;正在准备保存报价…&#x27;;
-  parent.postMessage({type:&#x27;ozon-save-quote&#x27;,requestId:feishuPending.snapshot.id,snapshot:feishuPending.snapshot},&#x27;*&#x27;);
+ const invalid=getInvalid();if(invalid||!current){saveStatus(&#x27;daily&#x27;).textContent=invalid||&#x27;请先完成有效报价。&#x27;;return;}
+ if(!String(values.name||&#x27;&#x27;).trim()){saveStatus(&#x27;daily&#x27;).textContent=&#x27;请先填写商品名称。&#x27;;return;}
+ submitFeishuSnapshot(&#x27;daily&#x27;,()=&gt;({kind:&#x27;daily&#x27;,id:feishuUUID(),saved_at:new Date().toISOString(),mode,inputs:dailyInputs(values),result:JSON.parse(JSON.stringify(current))}));
 }
+function beginReconciliationSave(){submitFeishuSnapshot(&#x27;reconciliation&#x27;,reconciliationSnapshot);}
 window.addEventListener(&#x27;message&#x27;,event=&gt;{
-  if(event.source!==parent || !feishuPending || event.data?.requestId!==feishuPending.snapshot.id)return;
-  if(event.data.type===&#x27;ozon-save-progress&#x27;){$(&#x27;[data-save-status]&#x27;).textContent=String(event.data.message||&#x27;正在保存…&#x27;);return;}
-  if(event.data.type!==&#x27;ozon-save-result&#x27;)return;
-  feishuBusy=false;$(&#x27;[data-save]&#x27;).disabled=false;$(&#x27;[data-save]&#x27;).textContent=&#x27;保存到飞书&#x27;;
-  if(event.data.ok===true){
-    const q=feishuPending.snapshot,c=q.result,v=q.inputs;
-    saved.push({inputs:v,name:v.name,fx:v.fx,cost:c.cost,r:c.r,profit:c.profit,margin:c.margin,id:q.id,origin:&#x27;feishu&#x27;,time:new Date(q.saved_at).toLocaleString(&#x27;zh-CN&#x27;,{month:&#x27;numeric&#x27;,day:&#x27;numeric&#x27;,hour:&#x27;2-digit&#x27;,minute:&#x27;2-digit&#x27;})});
-    saved=saved.slice(-8);
-    $(&#x27;[data-save-status]&#x27;).textContent=feishuKey()===feishuPending.key?&#x27;已保存到飞书，可在“报价记录”或飞书查看&#x27;:&#x27;上一份报价已保存到飞书；当前修改尚未保存&#x27;;
-    feishuPending=null;renderSaved();persist();
-  }else if(event.data.pending===true){
-    $(&#x27;[data-save-status]&#x27;).textContent=&#x27;保存任务仍在处理，可点击“查看保存进度”继续检查。&#x27;;
-    $(&#x27;[data-save]&#x27;).textContent=&#x27;查看保存进度&#x27;;
-  }else{$(&#x27;[data-save-status]&#x27;).textContent=String(event.data.message||&#x27;报价尚未保存，可点击重试。&#x27;);}
+ if(event.source!==parent||!feishuPending||event.data?.requestId!==feishuPending.snapshot.id)return;
+ const kind=feishuPending.kind,status=saveStatus(kind),button=$(kind===&#x27;reconciliation&#x27;?&#x27;[data-recon-save]&#x27;:&#x27;[data-save]&#x27;);
+ if(event.data.type===&#x27;ozon-save-progress&#x27;){status.textContent=String(event.data.message||&#x27;正在保存…&#x27;);return;}
+ if(event.data.type!==&#x27;ozon-save-result&#x27;)return;
+ feishuBusy=false;$(&#x27;[data-save]&#x27;).disabled=!current;renderReconciliation();button.textContent=kind===&#x27;reconciliation&#x27;?&#x27;保存对账记录&#x27;:&#x27;保存到飞书&#x27;;
+ if(event.data.ok===true){
+  const q=feishuPending.snapshot,c=q.result,v=q.inputs,name=kind===&#x27;reconciliation&#x27;?q.reference.inputs.name:v.name;
+  saved.push({kind,inputs:v,result:c,reference:q.reference,name,fx:v.fx,cost:c.cost,r:c.r,profit:c.profit,margin:c.margin,id:q.id,origin:&#x27;feishu&#x27;,time:new Date(q.saved_at).toLocaleString(&#x27;zh-CN&#x27;,{month:&#x27;numeric&#x27;,day:&#x27;numeric&#x27;,hour:&#x27;2-digit&#x27;,minute:&#x27;2-digit&#x27;})});saved=saved.slice(-8);
+  status.textContent=feishuKey(kind)===feishuPending.key?(kind===&#x27;reconciliation&#x27;?&#x27;对账已单独保存到飞书，原报价未改动&#x27;:&#x27;日常报价已保存到飞书&#x27;):&#x27;上一份记录已保存到飞书；当前修改尚未保存&#x27;;
+  feishuPending=null;renderSaved();persist();
+ }else if(event.data.pending===true){status.textContent=&#x27;保存仍在处理，可再次点击查看进度。&#x27;;button.textContent=&#x27;查看保存进度&#x27;;}
+ else status.textContent=String(event.data.message||&#x27;尚未保存，可点击重试。&#x27;);
 });
-root.addEventListener(&#x27;input&#x27;,()=&gt;{if(!feishuBusy)$(&#x27;[data-save]&#x27;).textContent=&#x27;保存到飞书&#x27;;});
 
 root.addEventListener(&#x27;click&#x27;,e=&gt;{
  if(!e.target.closest(&#x27;[data-v3-confirm]&#x27;))return;
- values.confirmedCategoryRow=String(values.categoryId);render();persist();
+ values.commissionMode=&#x27;confirmed&#x27;;values.confirmedCategoryRow=String(values.categoryId);syncV3();render();persist();
+});
+
+function syncReconciliation(){for(const el of $$(&#x27;[data-recon-key]&#x27;))el.value=reconciliation.inputs[el.dataset.reconKey]??&#x27;&#x27;;}
+function renderReconciliation(){
+ const ref=reconciliation.reference;
+ $(&#x27;[data-recon-reference]&#x27;).textContent=ref?`已锁定：${ref.inputs.name} · 卖家售价 ₽${money(ref.result.r)} · 原预计利润 ¥${money(ref.result.profit)}。后续修改报价不会改动此快照。`:&#x27;尚未引用报价。&#x27;;
+ const result=reconcileOrder(reconciliation.inputs,ref),touched=!!ref||Object.values(reconciliation.inputs).some(v=&gt;v!==&#x27;&#x27;);
+ $(&#x27;[data-recon-validation]&#x27;).textContent=touched?(result.error||&#x27;按已填写的实际收支计算；费用填全后再保存。&#x27;):&#x27;&#x27;;
+ $(&#x27;[data-recon-save]&#x27;).disabled=!!result.error;
+ const rows=result.error?[]:[[&#x27;实际收入&#x27;,result.revenue],[&#x27;实际成本&#x27;,result.cost],[&#x27;实际扣费&#x27;,result.fees],[&#x27;实际广告&#x27;,result.ads],[&#x27;实际资金成本&#x27;,result.funding],[&#x27;订单实际利润&#x27;,result.profit],[&#x27;原报价预计利润&#x27;,result.originalProfit],[&#x27;与原报价差额&#x27;,result.variance]];
+ $(&#x27;[data-recon-result]&#x27;).innerHTML=rows.map(([label,amount])=&gt;`&lt;dt&gt;${label}&lt;/dt&gt;&lt;dd&gt;¥ ${money(amount)}&lt;/dd&gt;`).join(&#x27;&#x27;)+(!result.error?`&lt;dt&gt;实际利润率&lt;/dt&gt;&lt;dd&gt;${result.marginAvailable?(result.margin*100).toFixed(2)+&#x27;%&#x27;:&#x27;无收入，不计算&#x27;}&lt;/dd&gt;`:&#x27;&#x27;);
+}
+function newRecordId(){const b=crypto.getRandomValues(new Uint8Array(16));b[6]=(b[6]&amp;15)|64;b[8]=(b[8]&amp;63)|128;const h=Array.from(b,x=&gt;x.toString(16).padStart(2,&#x27;0&#x27;)).join(&#x27;&#x27;);return `${h.slice(0,8)}-${h.slice(8,12)}-${h.slice(12,16)}-${h.slice(16,20)}-${h.slice(20)}`;}
+function reconciliationSnapshot(){const result=reconcileOrder(reconciliation.inputs,reconciliation.reference);if(result.error)throw new Error(result.error);return {kind:&#x27;reconciliation&#x27;,id:newRecordId(),saved_at:new Date().toISOString(),mode:&#x27;reconciliation&#x27;,inputs:{...reconciliation.inputs},reference:JSON.parse(JSON.stringify(reconciliation.reference)),result};}
+function applyShopCategory(v,id){const updated=reuseShopProfile(v,shopProfile,id);Object.assign(v,updated);$(&#x27;[data-shop-status]&#x27;).textContent=shopProfile.categories?.[String(id)]?&#x27;已载入该类目的历史核验依据；请确认当前商品类型和品牌适用后采用。&#x27;:&#x27;该类目尚未保存实际佣金，当前使用参考费率。&#x27;;syncV3();}
+root.addEventListener(&#x27;input&#x27;,e=&gt;{const key=e.target.dataset.reconKey;if(!key)return;reconciliation.inputs[key]=e.target.type===&#x27;number&#x27;?(e.target.value===&#x27;&#x27;?&#x27;&#x27;:+e.target.value):e.target.value;$(&#x27;[data-recon-save-status]&#x27;).textContent=&#x27;对账尚未保存&#x27;;renderReconciliation();persist();});
+root.addEventListener(&#x27;click&#x27;,e=&gt;{
+ if(e.target.closest(&#x27;[data-shop-save]&#x27;)){try{shopProfile=makeShopProfile(values,shopProfile);$(&#x27;[data-shop-status]&#x27;).textContent=&#x27;店铺支付费率已保存&#x27;+(values.commissionMode===&#x27;confirmed&#x27;?&#x27;，当前类目佣金依据已保存&#x27;:&#x27;；未核实佣金继续使用参考值&#x27;)+&#x27;。仅保存在当前浏览器或会话，不跨设备同步。&#x27;;persist();}catch(error){$(&#x27;[data-shop-status]&#x27;).textContent=error.message;}return;}
+ if(e.target.closest(&#x27;[data-recon-capture]&#x27;)){
+  const error=getInvalid();if(error||!current){$(&#x27;[data-recon-validation]&#x27;).textContent=error||&#x27;请先生成有效报价。&#x27;;return;}
+  reconciliation.reference=JSON.parse(JSON.stringify({id:newRecordId(),capturedAt:new Date().toISOString(),modelVersion:MODEL_VERSION,inputs:dailyInputs(values),result:current}));
+  reconciliation.inputs.actualCostCny=Number(current.cost.toFixed(4));reconciliation.inputs.fx=+values.fx;
+  syncReconciliation();renderReconciliation();$(&#x27;[data-recon-save-status]&#x27;).textContent=&#x27;已引用当前报价；实际费用仍需据实填写。&#x27;;persist();return;
+ }
+ if(e.target.closest(&#x27;[data-recon-save]&#x27;)){
+  if(typeof beginReconciliationSave===&#x27;function&#x27;){beginReconciliationSave();return;}
+  try{const q=reconciliationSnapshot();saved.push({kind:q.kind,reference:q.reference,inputs:q.inputs,result:q.result,name:q.reference.inputs.name,fx:q.inputs.fx,cost:q.result.cost,r:q.result.r,profit:q.result.profit,margin:q.result.margin,id:q.id,time:new Date().toLocaleString(&#x27;zh-CN&#x27;)});saved=saved.slice(-8);renderSaved();persist();$(&#x27;[data-recon-save-status]&#x27;).textContent=&#x27;已保存本地对账快照；原报价未改动。&#x27;;}catch(error){$(&#x27;[data-recon-save-status]&#x27;).textContent=error.message;}
+ }
 });
 
 root.addEventListener(&#x27;focusin&#x27;,e=&gt;{if(e.target.dataset.key)baseline=current?{...current,weight:+values.weight}:null;});
@@ -2326,7 +2390,7 @@ root.addEventListener(&#x27;change&#x27;,e=&gt;{
  if(e.target.hasAttribute(&#x27;data-category-leaf&#x27;))chooseCategory(e.target.value);
 });
 root.addEventListener(&#x27;click&#x27;,e=&gt;{const b=e.target.closest(&#x27;button&#x27;);if(!b)return;if(b.hasAttribute(&#x27;data-convert-mm&#x27;)){const converted=convertMm();if(converted){Object.assign(values,converted);baseline=null;sync();$(&#x27;[data-save-status]&#x27;).textContent=&#x27;尺寸已按毫米换算为厘米；其他输入保持原值&#x27;;persist();}return;}if(b.hasAttribute(&#x27;data-category-pick&#x27;)){chooseCategory(b.dataset.categoryPick);return;}if(b.dataset.mode||b.hasAttribute(&#x27;data-scenario&#x27;))baseline=current?{...current,weight:+values.weight}:null;if(b.dataset.mode){mode=b.dataset.mode;render();persist();}if(b.dataset.page){page=b.dataset.page;render();}if(b.hasAttribute(&#x27;data-scenario&#x27;)&amp;&amp;b.dataset.scenario){values.manual=+b.dataset.scenario;values.manualBasis=&#x27;seller&#x27;;syncV3();mode=&#x27;price&#x27;;$(&#x27;[data-key=&quot;manual&quot;]&#x27;).value=values.manual;render();$(&#x27;.oq-result&#x27;).scrollIntoView({behavior:&#x27;auto&#x27;,block:&#x27;center&#x27;});persist();}if(b.hasAttribute(&#x27;data-save&#x27;)&amp;&amp;current){beginFeishuSave();}});
-window.addEventListener(&#x27;openai:set_globals&#x27;,e=&gt;{const state=e.detail?.globals?.widgetState,v=state?.privateContent;if(!v||![1,2,3].includes(v.version))return;const changed=[...Object.keys(defaults),&#x27;categoryId&#x27;].some(k=&gt;v.values?.[k]!==values[k]);if(!changed&amp;&amp;v.mode===mode&amp;&amp;v.saved?.length===saved.length)return;if(changed)baseline=null;applyState(state);sync();});
+window.addEventListener(&#x27;openai:set_globals&#x27;,e=&gt;{const state=e.detail?.globals?.widgetState,v=state?.privateContent;if(!v||![1,2,3,4].includes(v.version))return;const changed=[...Object.keys(defaults),&#x27;categoryId&#x27;].some(k=&gt;v.values?.[k]!==values[k]);if(!changed&amp;&amp;v.mode===mode&amp;&amp;v.saved?.length===saved.length)return;if(changed)baseline=null;applyState(state);sync();});
 sync();
 if(globalThis.Tweak){const design={hints:true};const tweak=new Tweak({container:root,onChange:()=&gt;root.classList.toggle(&#x27;oq-compact&#x27;,!design.hints)});tweak.addToggle(design,&#x27;hints&#x27;,{label:&#x27;常驻填写说明&#x27;});}
 })();
@@ -3205,7 +3269,7 @@ if(globalThis.Tweak){const design={hints:true};const tweak=new Tweak({container:
 <script>
 (()=>{
 // Financial rules shared by the standalone calculator and Feishu plugin.
-const MODEL_VERSION='ozon-pricing-2026-11-11-v3';
+const MODEL_VERSION='ozon-pricing-2026-11-11-v3.1';
 const RATE_VERSIONS={checked:'2026-11-11',commission:'2025-12-01',ogl:'2026-08-24',oglDocumentUpdated:'2026-11-09',organizationEffective:'2026-09-01'};
 const V3_DEFAULTS={commissionMode:'reference',actualCategory:'',actualType:'',actualBrand:'',commissionEvidence:'',commissionChecked:'',confirmedCategoryRow:'',actualCommission1:'',actualCommission2:'',actualCommission3:'',manualBasis:'seller',pointDiscount:0,pointCompensation:0,bankBase:'seller',withdrawBase:'platform',feeConfirmed:'no',feeEvidence:'',feeChecked:'',orderDate:'2026-11-11',orderStatus:'delivered',reviewPlan:'off',highestPrice:0,extraServiceRate:0,extraServiceFixed:0,extraServiceNote:'',afterMode:'reserve',cancelProbability:0,cancelRecovery:'',returnProbability:0,returnRecovery:'',whdProbability:0,whdRecovery:'',destroyProbability:0,destroyRecovery:''};
 const nonnegative=x=>x!==''&&x!==null&&Number.isFinite(+x)&&+x>=0;
@@ -3295,6 +3359,35 @@ function solveV3(v,shipping,tariffs,goal=0,minProfit=0){
  return best;
 }
 
+// Daily pricing deliberately ignores order-specific points. Older snapshots retain
+// their original v3 inputs; reconciliation has its own immutable reference.
+function dailyInputs(v){return {...v,manualBasis:'seller',pointDiscount:0,pointCompensation:0};}
+const RECON_DEFAULTS={orderId:'',cashRub:'',compensationRub:'',fx:'',actualFeesCny:'',actualCostCny:'',actualAdsCny:'',actualFundingCny:'',note:''};
+function reconcileOrder(input,reference){
+ if(!reference?.result||!reference?.inputs||!reference?.id||!validDate(reference.capturedAt?.slice(0,10)||''))return {error:'请先引用一份有效报价，锁定原报价快照。'};
+ if(!String(input.orderId||'').trim())return {error:'请填写订单编号。'};
+ for(const key of ['cashRub','compensationRub','fx','actualFeesCny','actualCostCny','actualAdsCny','actualFundingCny'])if(!nonnegative(input[key]))return {error:'请填全实际收入、汇率和各项费用；没有发生的项目请明确填0。'};
+ if(+input.fx<=0)return {error:'实际结算汇率必须大于0。'};
+ const revenue=(+input.cashRub + +input.compensationRub)/+input.fx;
+ const cost=+input.actualCostCny,profit=revenue-cost-(+input.actualFeesCny)-(+input.actualAdsCny)-(+input.actualFundingCny);
+ if(!Number.isFinite(reference.result.profit))return {error:'原报价利润无效，请重新引用报价。'};
+ return {kind:'reconciliation',modelVersion:MODEL_VERSION,orderId:String(input.orderId).trim(),r:+input.cashRub,p:revenue,revenue,cashRub:+input.cashRub,compensationRub:+input.compensationRub,cost,profit,margin:revenue>0?profit/revenue:0,marginAvailable:revenue>0,fees:+input.actualFeesCny,ads:+input.actualAdsCny,funding:+input.actualFundingCny,originalProfit:reference.result.profit,variance:profit-reference.result.profit,referenceId:reference.id};
+}
+const SHOP_COMMON_KEYS=['bank','withdraw','bankBase','withdrawBase','feeConfirmed','feeEvidence','feeChecked'];
+const SHOP_COMMISSION_KEYS=['actualCategory','actualType','actualBrand','commissionEvidence','commissionChecked','actualCommission1','actualCommission2','actualCommission3'];
+function makeShopProfile(v,previous={}){
+ const error=validateV3(dailyInputs(v));if(error)throw new Error(error);
+ const common=Object.fromEntries(SHOP_COMMON_KEYS.map(k=>[k,v[k]]));
+ const categories={...(previous.categories||{})};
+ if(v.commissionMode==='confirmed')categories[String(v.categoryId)]=Object.fromEntries(SHOP_COMMISSION_KEYS.map(k=>[k,v[k]]));
+ return {common,categories};
+}
+function reuseShopProfile(v,profile,id){
+ const next={...v,...(profile?.common||{})};
+ for(const k of SHOP_COMMISSION_KEYS)next[k]=profile?.categories?.[String(id)]?.[k]??V3_DEFAULTS[k];
+ next.commissionMode='reference';next.confirmedCategoryRow='';return next;
+}
+
 const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 const inputNumbers=['purchase','domestic','handling','other','weight','length','width','height','fx','margin','minimum','manual','discount','ads','returns','withdraw','bank','days','annual','commission1','commission2','commission3'];
 const resultNumbers=['r','p','logistics','rate','commission','electronic','organization','bank','withdraw','cost','ads','after','funding','profit','margin','charge'];
@@ -3302,7 +3395,25 @@ const fail=message=>{throw new Error(message);};
 const finite=(v,label)=>typeof v==='number'&&Number.isFinite(v)?v:fail(`报价数据不完整：${label}`);
 const text=(v,max,label)=>typeof v==='string'&&v.length<=max?v:fail(`报价文字不合法：${label}`);
 
+function createReconciliationRecord(snapshot){
+  if(!uuid.test(snapshot.id||''))fail('对账编号必须为 UUID v4。');
+  const date=Date.parse(snapshot.saved_at);if(!Number.isFinite(date))fail('对账保存时间不合法。');
+  const raw=snapshot.inputs||{},reference=snapshot.reference;
+  const inputs=Object.fromEntries(Object.keys(RECON_DEFAULTS).map(k=>[k,raw[k]??'']));
+  for(const [key,value] of Object.entries(inputs))if(!['string','number'].includes(typeof value)||(typeof value==='string'&&value.length>2000))fail('对账输入不合法：'+key);
+  if(!reference?.inputs||!reference?.result||!uuid.test(reference.id||''))fail('原报价快照不完整。');
+  const name=text(reference.inputs.name,200,'商品名称'),categoryName=text(reference.inputs.categoryName,1000,'商品类目');
+  for(const key of ['r','profit','cost'])finite(reference.result[key],'原报价'+key);
+  const result=reconcileOrder(inputs,reference);if(result.error)fail(result.error);
+  return {fields:{'报价编号':snapshot.id,'保存时间':date,'商品名称':name,'商品类目':categoryName,
+   '采用汇率RUB每CNY':+inputs.fx,'测算方式':'订单对账','买家支付价RUB':result.cashRub,'成交收入CNY':result.revenue,
+   '预计利润CNY':result.profit,'预计利润率百分数':result.margin*100,'费率核对状态':'订单对账：按实际收支；原报价已锁定',
+   '输入快照JSON':JSON.stringify({model_version:MODEL_VERSION,kind:'reconciliation',inputs,reference}),
+   '结果快照JSON':JSON.stringify({model_version:MODEL_VERSION,kind:'reconciliation',result,saved_at:snapshot.saved_at})}};
+}
+
 function createRecord(snapshot){
+  if(snapshot?.kind==='reconciliation')return createReconciliationRecord(snapshot);
   if(!snapshot || typeof snapshot!=='object' || !uuid.test(snapshot.id||''))fail('报价编号必须为 UUID v4。');
   const mode=['target','price'].includes(snapshot.mode)?snapshot.mode:fail('测算方式不正确。');
   const date=Date.parse(snapshot.saved_at);
@@ -3315,7 +3426,7 @@ function createRecord(snapshot){
   inputs.categoryId=text(String(raw.categoryId||''),50,'类目编号');
   inputs.categoryName=text(raw.categoryName,1000,'商品类目');
   if(!inputs.categoryId || !inputs.categoryName)fail('请选择商品类目。');
-  const isV3=rawResult.modelVersion===MODEL_VERSION;
+  const isV3=[MODEL_VERSION,'ozon-pricing-2026-11-11-v3'].includes(rawResult.modelVersion);
   if(isV3){for(const [k,defaultValue] of Object.entries(V3_DEFAULTS)){const value=raw[k]??defaultValue;if(typeof value!=='string'&&typeof value!=='number')fail('扩展输入格式不正确：'+k);if(typeof value==='number'&&!Number.isFinite(value))fail('扩展输入无效：'+k);if(typeof value==='string'&&value.length>2000)fail('扩展输入过长：'+k);inputs[k]=value;}const invalid=validateV3(inputs);if(invalid)fail(invalid);}
   const result=Object.fromEntries(resultNumbers.map(k=>[k,finite(rawResult[k],k)]));
   result.group=text(rawResult.group,100,'物流档位');
@@ -3323,10 +3434,10 @@ function createRecord(snapshot){
   if(inputs.fx<=0 || result.r<=0 || result.p<=0 || ['weight','length','width','height'].some(k=>inputs[k]<=0))fail('汇率、售价、重量和尺寸必须大于零。');
   if(mode==='price'&&inputs.manual<=0)fail('请填写买家支付价。');
   if(['purchase','domestic','handling','other'].some(k=>inputs[k]<0))fail('成本不能为负数。');
-  if(isV3){for(const k of ['cashRub','compensationRub','revenue','reviewFee','extraServices','services','beforeRisk'])result[k]=finite(rawResult[k],k);result.scenarios=JSON.parse(JSON.stringify(rawResult.scenarios));result.verification=verification(inputs);result.rateVersions={...RATE_VERSIONS};result.modelVersion=MODEL_VERSION;result.orderDate=inputs.orderDate;result.orderStatus=inputs.orderStatus;if(Math.abs(result.cashRub-(result.r-(+inputs.pointDiscount)))>0.000001||Math.abs(result.compensationRub-(+inputs.pointCompensation))>0.000001||Math.abs(result.revenue-(result.cashRub+result.compensationRub)/inputs.fx)>0.000001||result.revenue<=0)fail('价格与积分补偿不一致。');}
+  if(isV3){for(const k of ['cashRub','compensationRub','revenue','reviewFee','extraServices','services','beforeRisk'])result[k]=finite(rawResult[k],k);result.scenarios=JSON.parse(JSON.stringify(rawResult.scenarios));result.verification=verification(inputs);result.rateVersions={...RATE_VERSIONS};result.modelVersion=rawResult.modelVersion;result.orderDate=inputs.orderDate;result.orderStatus=inputs.orderStatus;if(Math.abs(result.cashRub-(result.r-(+inputs.pointDiscount)))>0.000001||Math.abs(result.compensationRub-(+inputs.pointCompensation))>0.000001||Math.abs(result.revenue-(result.cashRub+result.compensationRub)/inputs.fx)>0.000001||result.revenue<=0)fail('价格与积分补偿不一致。');}
   if(Math.abs(result.p-result.r/inputs.fx)>0.000001 || Math.abs(result.margin-result.profit/(isV3?result.revenue:result.p))>0.000001)fail('报价结果与汇率或利润率不一致，请重新测算。');
-  const inputSnapshot={model_version:isV3?MODEL_VERSION:'ozon-pricing-2026-10-29',mode,inputs};
-  const resultSnapshot={model_version:inputSnapshot.model_version,result,commission_basis:isV3&&inputs.commissionMode==='confirmed'?inputs.commissionEvidence:'中国跨境rFBS佣金表2025-12-01；OGL适用性待核对',logistics_basis:'OGL费率表2026-08-24',saved_at:snapshot.saved_at};
+  const inputSnapshot={model_version:isV3?rawResult.modelVersion:'ozon-pricing-2026-10-29',kind:snapshot.kind||'daily',mode,inputs};
+  const resultSnapshot={model_version:inputSnapshot.model_version,kind:inputSnapshot.kind,result,commission_basis:isV3&&inputs.commissionMode==='confirmed'?inputs.commissionEvidence:'中国跨境rFBS佣金表2025-12-01；OGL适用性待核对',logistics_basis:'OGL费率表2026-08-24',saved_at:snapshot.saved_at};
   return {fields:{
     '报价编号':snapshot.id,'保存时间':date,'商品名称':inputs.name,'商品类目':inputs.categoryName,
     '商品采购价CNY':inputs.purchase,'寄广州运费CNY':inputs.domestic,'广州处理费CNY':inputs.handling,'其他单件成本CNY':inputs.other,
